@@ -1,28 +1,580 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sita Pharmacy | Dehradun</title>
+<meta name="description" content="Sita Pharmacy in Rajeshwar Nagar Phase 2, Dehradun. Order medicines, surgical supplies, and get free home delivery. Call +91-8979097510.">
+<meta name="google-site-verification" content="3DL2_eyRwhGCat2XmGJRmrFqQEJzEd5ZCQctfperbhE"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%231597a4%22/><path d=%22M38 22h24v16h16v24H62v16H38V62H22V38h16V22z%22 fill=%22%23fff%22/></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Sita Pharmacy",
+  "telephone": "+918979097510",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajeshwar Nagar Phase 2",
+    "addressLocality": "Dehradun",
+    "addressRegion": "Uttarakhand",
+    "postalCode": "248001",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "22:30"
+    }
+  ],
+  "priceRange": "₹"
+}
+</script>
+
 <style>
-:root{--teal:#1597a4;--deep:#117c88;--ink:#17242a;--muted:#617078;--pale:#effafb;--line:#dceff1}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+:root{--teal:#1597a4;--deep:#0f6b75;--green:#439b4b;--ink:#17242a;--muted:#617078;--pale:#effafb;--line:#dceff1;--wa:#25d366}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;padding-bottom:70px}
 nav{height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
 .brand{font-weight:900;color:var(--deep);display:flex;gap:10px;align-items:center}.mark{width:38px;height:38px;border-radius:10px;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:24px}nav a{margin-left:22px;text-decoration:none;color:var(--ink);font-weight:700}
-.hero{padding:75px 7%;background:linear-gradient(135deg,var(--pale),#fff 68%);display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero{padding:75px 7% 55px;background:linear-gradient(135deg,var(--pale),#fff 68%);display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
 .kicker{color:var(--teal);font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}h1{font-size:clamp(3rem,6vw,5.4rem);line-height:.98;letter-spacing:-.05em;margin:14px 0 20px}.hero p{font-size:1.15rem;color:var(--muted);max-width:580px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:900}.primary{background:var(--teal);color:#fff}.outline{border:1.5px solid var(--teal);color:var(--deep);background:#fff}
-.card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 24px 60px #0f687422}.bar{height:9px;background:var(--teal);border-radius:8px;margin:-30px -30px 28px}.logo{font-size:3.2rem;font-weight:900;letter-spacing:-.08em;color:var(--teal);line-height:1}.pharm{font-size:1rem;letter-spacing:.25em;color:#3d7c7f;font-weight:900}.tag{font-size:.65rem;letter-spacing:.13em;font-weight:800;color:#506268}.since{font-size:.7rem;color:#6a9b69;font-weight:800}.line{height:1px;background:var(--line);margin:20px 0}.item{display:flex;gap:12px;margin:12px 0;font-weight:700}.circle{width:27px;height:27px;min-width:27px;border-radius:50%;background:#edf7f8;display:grid;place-items:center;color:var(--deep)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:900}.primary{background:var(--teal);color:#fff}.outline{border:1.5px solid var(--teal);color:var(--deep);background:#fff}.whatsapp{background:var(--wa);color:#fff}
+
+.visiting-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(15,104,116,.14);max-width:440px;margin:0 auto}
+.card-band{height:12px;background:var(--teal);width:100%}
+.card-content{padding:26px 22px}
+.logo-svg-wrap{width:100%;max-width:280px;margin:0 auto 10px}
+.logo-svg-wrap svg{width:100%;height:auto;display:block}
+
+.card-details{display:flex;flex-direction:column;gap:10px;margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;text-align:left}
+.card-item{display:flex;gap:10px;font-weight:700;font-size:.9rem;align-items:flex-start}
+.card-ico{font-size:1rem;color:var(--teal)}
+.card-footer-box{background:#f8fcfd;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;margin-top:14px}
+.card-avail{font-weight:800;color:var(--ink);font-size:.85rem;margin-bottom:4px}
+.card-deliv{color:var(--teal);font-weight:800;font-size:.88rem;display:flex;align-items:center;justify-content:center;gap:6px}
+
+/* Trust Perks Strip */
+.perks-strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 7%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.perk-item{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left}
+.perk-icon{font-size:1.8rem;background:var(--pale);width:46px;height:46px;border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+.perk-text strong{display:block;font-size:.92rem;color:var(--ink)}
+.perk-text span{font-size:.78rem;color:var(--muted)}
+
+/* Prescription 3-Step Guide */
+.rx-guide{background:var(--pale);padding:60px 7%;border-bottom:1px solid var(--line)}
+.rx-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:960px;margin:32px auto 0}
+.rx-step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;position:relative}
+.rx-num{width:32px;height:32px;background:var(--teal);color:#fff;font-weight:900;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;font-size:.9rem}
+.rx-step h3{margin:0 0 8px;font-size:1.1rem;color:var(--deep)}
+.rx-step p{margin:0;font-size:.88rem;color:var(--muted);line-height:1.4}
+
 section{padding:75px 7%}.head{text-align:center;max-width:680px;margin:0 auto 42px}.head h2{font-size:2.35rem;margin:0 0 10px}.head p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{border:1px solid var(--line);border-radius:20px;padding:28px}.feature .ico{font-size:2rem}.feature h3{margin:12px 0 6px}.feature p{color:var(--muted)}
 .about{background:var(--pale);display:grid;grid-template-columns:1fr 1fr;gap:55px}.about h2{font-size:2.5rem}.about p{color:var(--muted);font-size:1.05rem}.facts,.visitgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact,.visit{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.fact strong,.visit strong{display:block;margin-bottom:5px}.fact span,.visit span{color:var(--muted)}
-.delivery{background:var(--teal);color:#fff;text-align:center}.delivery p{color:#e1f8fa;max-width:620px;margin:10px auto 24px}.delivery .outline{border:0}
 footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-content:space-between;color:var(--muted)}
-@media(max-width:800px){nav{padding:0 5%}nav div:last-child{display:none}.hero,.about{grid-template-columns:1fr;padding:55px 5%}section{padding:58px 5%}.grid{grid-template-columns:1fr}.facts,.visitgrid{grid-template-columns:1fr}footer{padding:22px 5%;flex-wrap:wrap}}
-</style><meta name="google-site-verification" content="3DL2_eyRwhGCat2XmGJRmrFqQEJzEd5ZCQctfperbhE"/></head>
+
+.searchbox{max-width:680px;margin:0 auto 10px;position:relative}
+.searchbox input{width:100%;padding:16px 48px 16px 20px;font-size:1.05rem;border:2px solid var(--line);border-radius:14px;outline:none}
+.searchbox input:focus{border-color:var(--teal)}
+.clear-btn{position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.2rem;color:var(--muted);cursor:pointer;display:none;padding:5px}
+
+.price-trust-badge{text-align:center;margin:0 auto 24px;max-width:680px}
+.price-trust-badge span{display:inline-block;background:var(--pale);border:1px solid var(--line);color:var(--deep);font-size:.85rem;font-weight:700;padding:6px 14px;border-radius:8px}
+
+.back-bar{max-width:680px;margin:0 auto 16px;display:none;justify-content:space-between;align-items:center}
+.back-btn{background:#edf7f8;border:1px solid var(--teal);color:var(--deep);font-weight:800;font-size:.9rem;padding:8px 16px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.back-btn:hover{background:var(--teal);color:#fff}
+.active-tag{font-size:.9rem;font-weight:700;color:var(--muted)}
+
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:680px;margin:0 auto}
+.cat-card{background:var(--pale);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;cursor:pointer;transition:transform .15s}
+.cat-card:hover{transform:translateY(-2px);background:#e4f6f8}
+.cat-icon{font-size:1.8rem;margin-bottom:6px}
+.cat-title{font-weight:800;color:var(--deep);font-size:.95rem}
+.med-list{display:none;flex-direction:column;gap:10px;max-width:680px;margin:0 auto}
+.med-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.med-name{font-weight:700;font-size:1rem}
+.med-category{font-size:.78rem;color:var(--muted);margin-top:2px}
+.med-status{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.75rem;font-weight:800;margin-top:4px}
+.in-stock{background:#e9f9ef;color:#1e7e34}
+
+.action-box{min-width:105px;display:flex;justify-content:flex-end}
+.add-init-btn{font-weight:800;font-size:.85rem;color:var(--teal);border:1.5px solid var(--teal);background:#fff;padding:8px 16px;border-radius:8px;cursor:pointer;transition:all .15s}
+.add-init-btn:hover{background:var(--teal);color:#fff}
+.stepper-wrap{display:none;align-items:center;background:var(--teal);border-radius:8px;overflow:hidden}
+.step-btn{background:none;border:none;color:#fff;font-size:1.1rem;font-weight:900;padding:6px 12px;cursor:pointer}
+.step-btn:hover{background:rgba(0,0,0,.12)}
+.step-qty{color:#fff;font-weight:900;font-size:.9rem;padding:0 4px;min-width:20px;text-align:center}
+
+.no-results{text-align:center;padding:30px 20px;color:var(--muted);display:none;max-width:680px;margin:0 auto;background:var(--pale);border-radius:16px;border:1px dashed var(--teal)}
+.disclaimer{font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center}
+
+/* Floating Elements */
+.float-wa{position:fixed;bottom:24px;right:24px;width:58px;height:58px;background:var(--wa);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:30px;text-decoration:none;box-shadow:0 8px 24px rgba(37,211,102,.45);z-index:98;transition:transform .2s}
+.float-wa:hover{transform:scale(1.08)}
+
+.order-tray{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);width:90%;max-width:540px;background:#17242a;color:#fff;border-radius:16px;padding:14px 20px;display:none;justify-content:space-between;align-items:center;box-shadow:0 12px 36px rgba(0,0,0,.35);z-index:99}
+.tray-info{font-weight:800;font-size:1rem}
+.tray-sub{font-size:.78rem;color:#b0c0c8;margin-top:2px}
+.tray-btn{background:#25d366;color:#fff;text-decoration:none;font-weight:900;font-size:.9rem;padding:10px 18px;border-radius:10px;display:flex;align-items:center;gap:6px}
+
+@media(max-width:900px){.perks-strip{grid-template-columns:repeat(2,1fr)}.rx-steps{grid-template-columns:1fr}}
+@media(max-width:800px){nav{padding:0 5%}nav div:last-child{display:none}.hero,.about{grid-template-columns:1fr;padding:55px 5%}section{padding:58px 5%}.grid{grid-template-columns:1fr}.cat-grid{grid-template-columns:repeat(2,1fr)}.facts,.visitgrid{grid-template-columns:1fr}footer{padding:22px 5%;flex-wrap:wrap}}
+</style>
+</head>
 <body>
-<nav><div class="brand"><div class="mark">+</div>SITA PHARMACY</div><div><a href="#services">Services</a><a href="#about">About</a><a href="#visit">Visit</a></div></nav>
-<header class="hero"><div><div class="kicker">Care • Quality • Trust</div><h1>Your trusted pharmacy in Dehradun.</h1><p>Sita Pharmacy provides medicines and surgical products for your everyday healthcare needs, with the convenience of free home delivery.</p><div class="actions"><a class="btn primary" href="tel:+918979097510">Call 8979097510</a><a class="btn outline" href="#visit">Visit Us</a></div></div>
-<div class="card"><div class="bar"></div><div class="logo">SITA</div><div class="pharm">PHARMACY</div><div class="tag">CARE • QUALITY • TRUST</div><div class="since">Since 2025</div><div class="line"></div><div class="item"><div class="circle">⌖</div><div>Rajeshwar Nagar Phase 2,<br>Dehradun, Uttarakhand</div></div><div class="item"><div class="circle">☎</div><div>+91-8979097510</div></div><div class="line"></div><strong>All Types Of Medicine and Surgical Available</strong><div class="item"><div class="circle">➜</div><div>Free Home Delivery</div></div></div></header>
-<section id="services"><div class="head"><h2>What we offer</h2><p>Healthcare essentials and pharmacy services, right in your neighborhood.</p></div><div class="grid"><div class="feature"><div class="ico">💊</div><h3>Medicines</h3><p>All types of medicines for everyday healthcare needs.</p></div><div class="feature"><div class="ico">🩺</div><h3>Surgical Products</h3><p>A range of surgical and healthcare products available at the pharmacy.</p></div><div class="feature"><div class="ico">🛵</div><h3>Free Home Delivery</h3><p>Call us to check medicine availability and delivery details.</p></div></div></section>
-<section class="about" id="about"><div><div class="kicker">About Sita Pharmacy</div><h2>Care, quality and trust.</h2><p>Sita Pharmacy has been serving customers in Rajeshwar Nagar, Dehradun since 2025. Our goal is to make access to everyday medicines and healthcare products simple and convenient.</p></div><div class="facts"><div class="fact"><strong>📍 Location</strong><span>Rajeshwar Nagar Phase 2, Dehradun</span></div><div class="fact"><strong>🕘 Opening Hours</strong><span>Every day · 9:00 AM – 10:30 PM</span></div><div class="fact"><strong>📞 Phone</strong><span>+91-8979097510</span></div><div class="fact"><strong>🛵 Delivery</strong><span>Free home delivery</span></div></div></section>
-<section class="delivery"><h2>Need your medicines delivered?</h2><p>Give Sita Pharmacy a call and ask about medicine availability and our free home-delivery service.</p><a class="btn outline" href="tel:+918979097510">Call the Pharmacy</a></section>
-<section id="visit"><div class="head"><h2>Visit Sita Pharmacy</h2><p>We're open every day from 9:00 AM to 10:30 PM.</p></div><div class="visitgrid"><div class="visit"><strong>📍 Address</strong><span>Rajeshwar Nagar Phase 2, Dehradun, Uttarakhand</span></div><div class="visit"><strong>🕐 Opening Hours</strong><span>Every day · 9:00 AM – 10:30 PM</span></div><div class="visit"><strong>📞 Call</strong><span>+91-8979097510</span></div><div class="visit"><strong>⭐ Google</strong><span>Find Sita Pharmacy on Google Maps and see customer reviews.</span></div></div></section>
-<footer><div>© 2026 Sita Pharmacy</div><div>CARE • QUALITY • TRUST · Since 2025</div></footer>
-</body></html>
+<nav><div class="brand"><div class="mark">+</div>SITA PHARMACY</div><div><a href="#how-to-order">How to Order</a><a href="#check-stock">Check Stock</a><a href="#services">Services</a><a href="#about">About</a><a href="#visit">Visit</a></div></nav>
+
+<header class="hero">
+<div>
+<div class="kicker">Care • Quality • Trust</div>
+<h1>Your trusted pharmacy in Dehradun.</h1>
+<p>Sita Pharmacy provides medicines and surgical products for your everyday healthcare needs, with the convenience of free home delivery in Rajeshwar Nagar.</p>
+<div class="actions">
+<a class="btn primary" href="tel:+918979097510">📞 Call 8979097510</a>
+<a class="btn whatsapp" href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20send%20my%20prescription%20and%20order%20medicines." target="_blank">📄 Send Prescription on WhatsApp</a>
+</div>
+</div>
+
+<div class="visiting-card">
+  <div class="card-band"></div>
+  <div class="card-content">
+    <div class="logo-svg-wrap">
+      <svg viewBox="0 0 280 145" xmlns="http://www.w3.org/2000/svg">
+        <path d="M96 28 C96 12 108 4 122 2 C118 14 110 24 96 28 Z" fill="#439b4b"/>
+        <path d="M90 26 C86 12 76 6 62 10 C66 22 76 26 90 26 Z" fill="#439b4b"/>
+        <path d="M16 38 C16 30 22 26 34 26 L62 26 C72 26 76 30 76 38 L60 38 C60 36 58 35 54 35 L34 35 C30 35 28 37 28 40 C28 44 32 46 42 48 L52 50 C66 53 76 58 76 68 C76 77 68 82 56 82 L12 82 L12 72 L54 72 C58 72 60 70 60 67 C60 63 56 62 46 60 L34 58 C20 55 16 48 16 38 Z" fill="#1597a4"/>
+        <path d="M84 36 C84 26 89 21 95 21 C101 21 106 26 106 36 L106 50 L84 50 Z" fill="#439b4b"/>
+        <path d="M88 36 C88 30 91 26 95 26 C99 26 102 30 102 36 L102 47 L88 47 Z" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+        <path d="M84 53 L106 53 L106 67 C106 77 101 82 95 82 C89 82 84 77 84 67 Z" fill="#1597a4"/>
+        <path d="M116 26 L164 26 L164 36 L146 36 L146 82 L134 82 L134 36 L116 36 Z" fill="#1597a4"/>
+        <polygon points="186,26 200,26 172,82 158,82" fill="#1597a4"/>
+        <polygon points="186,26 200,26 228,82 214,82" fill="#1597a4"/>
+        <g transform="translate(193, 67)">
+          <rect x="-2.5" y="-13" width="5" height="13" rx="1" fill="#439b4b"/>
+          <rect x="-6.5" y="-9" width="13" height="5" rx="1" fill="#439b4b"/>
+        </g>
+        <path d="M156 82 C176 68 210 68 230 82 C210 73 176 73 156 82 Z" fill="#439b4b"/>
+        <line x1="20" y1="102" x2="40" y2="102" stroke="#439b4b" stroke-width="2"/>
+        <text x="46" y="108" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="18" letter-spacing="3" fill="#439b4b">PHARMACY</text>
+        <line x1="168" y1="102" x2="188" y2="102" stroke="#439b4b" stroke-width="2"/>
+        <text x="44" y="122" font-family="Arial, sans-serif" font-weight="900" font-size="7.5" letter-spacing="1.5" fill="#203038">CARE | QUALITY | TRUST</text>
+        <text x="82" y="136" font-family="Arial, sans-serif" font-weight="800" font-size="7.5" fill="#439b4b">Since 2025</text>
+      </svg>
+    </div>
+
+    <div class="card-details">
+      <div class="card-item"><span class="card-ico">📍</span><div>Rajeshwar Nagar Phase 2,<br>Dehradun, Uttarakhand</div></div>
+      <div class="card-item"><span class="card-ico">📞</span><div>+91-8979097510</div></div>
+    </div>
+
+    <div class="card-footer-box">
+      <div class="card-avail">All Types Of Medicine and Surgical Available</div>
+      <div class="card-deliv">🚚 Free Home Delivery</div>
+    </div>
+  </div>
+  <div class="card-band"></div>
+</div>
+</header>
+
+<div class="perks-strip">
+  <div class="perk-item"><div class="perk-icon">⚡</div><div class="perk-text"><strong>30-60 Min Delivery</strong><span>Fast local dispatch</span></div></div>
+  <div class="perk-item"><div class="perk-icon">💯</div><div class="perk-text"><strong>100% Genuine</strong><span>Verified distributor stock</span></div></div>
+  <div class="perk-item"><div class="perk-icon">💳</div><div class="perk-text"><strong>Easy Payments</strong><span>UPI, Cards & Cash on Delivery</span></div></div>
+  <div class="perk-item"><div class="perk-icon">🩺</div><div class="perk-text"><strong>Health Checks</strong><span>BP & Blood Sugar monitoring</span></div></div>
+</div>
+
+<div class="rx-guide" id="how-to-order">
+  <div class="head" style="margin-bottom:0;">
+    <h2>Order in 3 Simple Steps</h2>
+    <p>Have a doctor's prescription or medicine list? Ordering takes less than a minute.</p>
+  </div>
+  <div class="rx-steps">
+    <div class="rx-step">
+      <div class="rx-num">1</div>
+      <h3>Snap Photo</h3>
+      <p>Click a clear photo of your prescription or write down the medicine names.</p>
+    </div>
+    <div class="rx-step">
+      <div class="rx-num">2</div>
+      <h3>Send on WhatsApp</h3>
+      <p>Tap the green button below and send the photo directly to our pharmacist.</p>
+    </div>
+    <div class="rx-step">
+      <div class="rx-num">3</div>
+      <h3>Doorstep Delivery</h3>
+      <p>We verify the medicines, confirm your bill, and dispatch directly to your home.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:28px;">
+    <a class="btn whatsapp" href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20send%20my%20prescription%20and%20order%20medicines." target="_blank">📱 Send Prescription on WhatsApp Now</a>
+  </div>
+</div>
+
+<section id="check-stock" style="background:#fff;">
+<div class="head">
+<h2>Search Medicines & Stock</h2>
+<p>Search any medicine, select quantity with <b>+ / -</b>, and send your order list directly to WhatsApp.</p>
+</div>
+
+<div class="searchbox">
+<input type="text" id="medSearch" placeholder="Type medicine (e.g. Dolo, Pan-D, Volini, Azithral, ORS)..." onkeyup="filterMedicines()">
+<button id="clearBtn" class="clear-btn" onclick="resetToCategories()">✕</button>
+</div>
+
+<div class="price-trust-badge">
+  <span>🏷️ Genuine MRP & best rates confirmed on WhatsApp before dispatch.</span>
+</div>
+
+<div class="back-bar" id="backBar">
+  <button class="back-btn" onclick="resetToCategories()">← All Categories</button>
+  <span class="active-tag" id="activeFilterName"></span>
+</div>
+
+<div class="cat-grid" id="categoryGrid">
+  <div class="cat-card" onclick="selectCategory('fever', 'Fever & Pain Relief')"><div class="cat-icon">💊</div><div class="cat-title">Fever & Pain Relief</div></div>
+  <div class="cat-card" onclick="selectCategory('gastro', 'Gas & Digestion')"><div class="cat-icon">🧪</div><div class="cat-title">Gas & Digestion</div></div>
+  <div class="cat-card" onclick="selectCategory('antibiotics', 'Antibiotics')"><div class="cat-icon">🛡️</div><div class="cat-title">Antibiotics & Anti-Infective</div></div>
+  <div class="cat-card" onclick="selectCategory('cold', 'Cold, Cough & Allergy')"><div class="cat-icon">🤧</div><div class="cat-title">Cold, Cough & Allergy</div></div>
+  <div class="cat-card" onclick="selectCategory('wellness', 'Vitamins & Supplements')"><div class="cat-icon">⚡</div><div class="cat-title">Vitamins & Supplements</div></div>
+  <div class="cat-card" onclick="selectCategory('surgical', 'Surgical & First Aid')"><div class="cat-icon">🩺</div><div class="cat-title">Surgical & First Aid</div></div>
+</div>
+
+<div class="med-list" id="medResults">
+  <!-- Fever & Pain -->
+  <div class="med-card" data-search="dolo 650 paracetamol fever body pain head calpol" data-cat="fever" data-name="Dolo 650mg Tablet">
+    <div><div class="med-name">Dolo 650mg Tablet</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="crocin 650 advance paracetamol pain headache" data-cat="fever" data-name="Crocin 650 Advance">
+    <div><div class="med-name">Crocin 650 Advance</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="combiflam ibuprofen paracetamol swelling muscle pain" data-cat="fever" data-name="Combiflam Tablet">
+    <div><div class="med-name">Combiflam Tablet</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="volini gel spray pain relief sprain backache joint pain" data-cat="fever" data-name="Volini Pain Relief Gel / Spray">
+    <div><div class="med-name">Volini Pain Relief Gel / Spray</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="saridon headache relief aspirin paracetamol" data-cat="fever" data-name="Saridon Tablet">
+    <div><div class="med-name">Saridon Tablet</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="meftal spas dicyclomine stomach pain period cramps" data-cat="fever" data-name="Meftal-Spas Tablet">
+    <div><div class="med-name">Meftal-Spas Tablet</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Gastro & Acidity -->
+  <div class="med-card" data-search="pan d pantoprazole domperidone gas acidity heartburn" data-cat="gastro" data-name="Pan-D Capsule">
+    <div><div class="med-name">Pan-D Capsule</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="pantocid 40 pantoprazole acidity stomach burn" data-cat="gastro" data-name="Pantocid 40mg Tablet">
+    <div><div class="med-name">Pantocid 40mg Tablet</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="omez 20 omeprazole acid reflux gas capsules" data-cat="gastro" data-name="Omez 20mg Capsule">
+    <div><div class="med-name">Omez 20mg Capsule</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="digene antacid syrup chewable mint gel acidity" data-cat="gastro" data-name="Digene Gel Syrup & Tablets">
+    <div><div class="med-name">Digene Gel Syrup & Tablets</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="eno fruit salt lemon regular fast acidity relief" data-cat="gastro" data-name="Eno Fruit Salt Sachets">
+    <div><div class="med-name">Eno Fruit Salt Sachets</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="ors electral powder hydration dehydration diarrhea" data-cat="gastro" data-name="Electral ORS Powder">
+    <div><div class="med-name">Electral ORS Powder (WHO Formula)</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Antibiotics -->
+  <div class="med-card" data-search="azithral 500 azithromycin antibiotic throat infection" data-cat="antibiotics" data-name="Azithral 500mg Tablet">
+    <div><div class="med-name">Azithral 500mg Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="augmentin 625 duo amoxyclav antibiotic infection" data-cat="antibiotics" data-name="Augmentin 625 Duo Tablet">
+    <div><div class="med-name">Augmentin 625 Duo Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="taxim o 200 cefixime antibiotic infection" data-cat="antibiotics" data-name="Taxim-O 200mg Tablet">
+    <div><div class="med-name">Taxim-O 200mg Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="norflox tz norfloxacin tinidazole loose motion stomach infection" data-cat="antibiotics" data-name="Norflox-TZ Tablet">
+    <div><div class="med-name">Norflox-TZ Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Cold, Cough & Allergy -->
+  <div class="med-card" data-search="cheston cold cetirizine paracetamol runny nose fever cold" data-cat="cold" data-name="Cheston Cold Tablet">
+    <div><div class="med-name">Cheston Cold Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="allegra 120 fexofenadine allergy sneezing runny nose" data-cat="cold" data-name="Allegra 120mg Tablet">
+    <div><div class="med-name">Allegra 120mg Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="montair lc montelukast levocetirizine asthma allergy" data-cat="cold" data-name="Montair-LC Tablet">
+    <div><div class="med-name">Montair-LC Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="benadryl cough syrup dry cough allergy relief" data-cat="cold" data-name="Benadryl Cough Formula Syrup">
+    <div><div class="med-name">Benadryl Cough Formula Syrup</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="otrivin nasal spray blocked nose breathing congestion" data-cat="cold" data-name="Otrivin Adult Nasal Spray">
+    <div><div class="med-name">Otrivin Adult Nasal Spray</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="vicks vaporub balm inhaler steam cold relief" data-cat="cold" data-name="Vicks VapoRub & Inhaler">
+    <div><div class="med-name">Vicks VapoRub & Inhaler</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Vitamins & Supplements -->
+  <div class="med-card" data-search="becosules capsules vitamin b complex zinc stamina" data-cat="wellness" data-name="Becosules Z Capsules">
+    <div><div class="med-name">Becosules Z Capsules</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="shelcal 500 calcium vitamin d3 bone joint health" data-cat="wellness" data-name="Shelcal 500mg Tablet">
+    <div><div class="med-name">Shelcal 500mg Tablet</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="limcee 500 vitamin c chewable immunity skin" data-cat="wellness" data-name="Limcee 500mg Vitamin C">
+    <div><div class="med-name">Limcee 500mg Vitamin C</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="evion 400 vitamin e capsules skin hair glow" data-cat="wellness" data-name="Evion 400 Vitamin E Capsules">
+    <div><div class="med-name">Evion 400 Vitamin E Capsules</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="revital h daily multivitamin energy capsules" data-cat="wellness" data-name="Revital H Daily Health Capsules">
+    <div><div class="med-name">Revital H Daily Health Capsules</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Surgical, First Aid & Care -->
+  <div class="med-card" data-search="dettol liquid antiseptic wound wash first aid" data-cat="surgical" data-name="Dettol Antiseptic Liquid">
+    <div><div class="med-name">Dettol Antiseptic Liquid</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="betadine 10 ointment povidone iodine wound burn cuts" data-cat="surgical" data-name="Betadine 10% Ointment">
+    <div><div class="med-name">Betadine 10% Ointment</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="hansaplast band aid adhesive bandage strip wound" data-cat="surgical" data-name="Hansaplast Medicated Band-Aids">
+    <div><div class="med-name">Hansaplast Medicated Band-Aids</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="surgical cotton roll crepe bandage micropore gauze tape" data-cat="surgical" data-name="Surgical Cotton & Crepe Bandages">
+    <div><div class="med-name">Surgical Cotton & Crepe Bandages</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="digital thermometer fever temperature check" data-cat="surgical" data-name="Digital Thermometer">
+    <div><div class="med-name">Digital Thermometer</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="blood pressure bp monitor omron digital machine" data-cat="surgical" data-name="Digital BP Monitor Machine">
+    <div><div class="med-name">Digital BP Monitor Machine</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="sugar test strips glucometer accu chek one touch diabetes" data-cat="surgical" data-name="Glucometer & Sugar Strips">
+    <div><div class="med-name">Glucometer & Sugar Strips</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+</div>
+
+<div class="no-results" id="noResultsMsg">
+  <h3 style="margin-top:0;color:var(--deep);">Don't see your medicine listed?</h3>
+  <p>We stock thousands of medicines in our Rajeshwar Nagar store. Send us your prescription or medicine name, and we'll confirm stock or arrange it for you immediately.</p>
+  <a class="btn whatsapp" href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20do%20you%20have%20this%20medicine?" target="_blank">💬 Check Availability on WhatsApp</a>
+</div>
+
+<p class="disclaimer">⚕️ Note: A valid doctor prescription is required for Schedule H & Schedule X prescription drugs as per Government of India guidelines.</p>
+</section>
+
+<section id="services">
+<div class="head"><h2>What we offer</h2><p>Healthcare essentials and pharmacy services, right in your neighborhood.</p></div>
+<div class="grid">
+<div class="feature"><div class="ico">💊</div><h3>Medicines</h3><p>All types of medicines for everyday healthcare needs.</p></div>
+<div class="feature"><div class="ico">🩺</div><h3>Surgical Products</h3><p>A range of surgical and healthcare products available at the pharmacy.</p></div>
+<div class="feature"><div class="ico">🛵</div><h3>Free Home Delivery</h3><p>Call us to check medicine availability and delivery details.</p></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div><div class="kicker">About Sita Pharmacy</div><h2>Care, quality and trust.</h2><p>Sita Pharmacy has been serving customers in Rajeshwar Nagar, Dehradun since 2025. Our goal is to make access to everyday medicines and healthcare products simple and convenient.</p></div>
+<div class="facts">
+<div class="fact"><strong>📍 Location</strong><span>Rajeshwar Nagar Phase 2, Dehradun</span></div>
+<div class="fact"><strong>🕘 Opening Hours</strong><span>Every day · 9:00 AM – 10:30 PM</span></div>
+<div class="fact"><strong>📞 Phone</strong><span>+91-8979097510</span></div>
+<div class="fact"><strong>🛵 Delivery</strong><span>Free home delivery</span></div>
+</div>
+</section>
+
+<section id="visit">
+<div class="head"><h2>Visit Sita Pharmacy</h2><p>We're open every day from 9:00 AM to 10:30 PM.</p></div>
+<div class="visitgrid">
+<div class="visit"><strong>📍 Address</strong><span>Rajeshwar Nagar Phase 2, Dehradun, Uttarakhand</span></div>
+<div class="visit"><strong>🕐 Opening Hours</strong><span>Every day · 9:00 AM – 10:30 PM</span></div>
+<div class="visit"><strong>📞 Call</strong><span>+91-8979097510</span></div>
+<div class="visit"><strong>🗺️ Directions</strong><a href="https://www.google.com/maps/search/?api=1&query=Rajeshwar+Nagar+Phase+2+Dehradun" target="_blank" style="color:var(--deep);font-weight:700;display:inline-block;margin-top:4px;">Open in Google Maps ↗</a></div>
+</div>
+</section>
+
+<footer>
+<div>© 2026 Sita Pharmacy</div>
+<div>CARE • QUALITY • TRUST · Since 2025</div>
+</footer>
+
+<!-- Always-Visible Floating WhatsApp Contact Button -->
+<a href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20order%20medicines." class="float-wa" target="_blank" title="Chat on WhatsApp" aria-label="WhatsApp">💬</a>
+
+<!-- Bottom Multi-Order Floating Tray (Slides up when items added) -->
+<div class="order-tray" id="orderTray">
+  <div>
+    <div class="tray-info" id="trayCount">0 items selected</div>
+    <div class="tray-sub">Tap button to send list to pharmacy</div>
+  </div>
+  <a href="#" id="trayOrderBtn" class="tray-btn" target="_blank">Order on WhatsApp →</a>
+</div>
+
+<script>
+let cart = {};
+
+function addItem(btn) {
+  let card = btn.closest('.med-card');
+  let itemName = card.getAttribute('data-name');
+  cart[itemName] = 1;
+  
+  let box = btn.closest('.action-box');
+  btn.style.display = 'none';
+  let stepper = box.querySelector('.stepper-wrap');
+  stepper.style.display = 'inline-flex';
+  stepper.querySelector('.step-qty').innerText = '1';
+  updateOrderTray();
+}
+
+function changeQty(btn, delta) {
+  let card = btn.closest('.med-card');
+  let itemName = card.getAttribute('data-name');
+  let box = btn.closest('.action-box');
+  let qtySpan = box.querySelector('.step-qty');
+  let currentQty = parseInt(qtySpan.innerText) + delta;
+  
+  if (currentQty <= 0) {
+    delete cart[itemName];
+    box.querySelector('.stepper-wrap').style.display = 'none';
+    box.querySelector('.add-init-btn').style.display = 'inline-block';
+  } else {
+    cart[itemName] = currentQty;
+    qtySpan.innerText = currentQty;
+  }
+  updateOrderTray();
+}
+
+function updateOrderTray() {
+  let tray = document.getElementById('orderTray');
+  let countText = document.getElementById('trayCount');
+  let orderBtn = document.getElementById('trayOrderBtn');
+  let items = Object.keys(cart);
+  
+  if (items.length > 0) {
+    tray.style.display = "flex";
+    let totalItems = items.reduce((sum, key) => sum + cart[key], 0);
+    countText.innerText = totalItems + (totalItems === 1 ? " item selected" : " items selected");
+    
+    let formattedList = items.map((name, i) => (i + 1) + ". " + name + " (Qty: " + cart[name] + ")").join("%0A");
+    let whatsappUrl = "https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20order%20the%20following%20medicines:%0A" + formattedList + "%0A%0APlease%20confirm%20availability%20and%20delivery%20/%20pickup.";
+    orderBtn.href = whatsappUrl;
+  } else {
+    tray.style.display = "none";
+  }
+}
+
+function filterMedicines() {
+  let input = document.getElementById('medSearch').value.toLowerCase().trim();
+  let catGrid = document.getElementById('categoryGrid');
+  let medList = document.getElementById('medResults');
+  let backBar = document.getElementById('backBar');
+  let clearBtn = document.getElementById('clearBtn');
+  let activeTag = document.getElementById('activeFilterName');
+  let cards = document.querySelectorAll('.med-card');
+  let noResults = document.getElementById('noResultsMsg');
+  
+  if (input === "") {
+    resetToCategories();
+    return;
+  }
+  
+  clearBtn.style.display = "block";
+  catGrid.style.display = "none";
+  medList.style.display = "flex";
+  backBar.style.display = "flex";
+  activeTag.innerText = 'Search: "' + input + '"';
+  
+  let matchCount = 0;
+  cards.forEach(card => {
+    let searchTerms = card.getAttribute('data-search').toLowerCase();
+    if (searchTerms.includes(input)) {
+      card.style.display = "flex";
+      matchCount++;
+    } else {
+      card.style.display = "none";
+    }
+  });
+  
+  if (matchCount === 0) {
+    noResults.style.display = "block";
+  } else {
+    noResults.style.display = "none";
+  }
+}
+
+function selectCategory(categoryKey, categoryName) {
+  let searchInput = document.getElementById('medSearch');
+  let catGrid = document.getElementById('categoryGrid');
+  let medList = document.getElementById('medResults');
+  let backBar = document.getElementById('backBar');
+  let clearBtn = document.getElementById('clearBtn');
+  let activeTag = document.getElementById('activeFilterName');
+  let cards = document.querySelectorAll('.med-card');
+  let noResults = document.getElementById('noResultsMsg');
+  
+  searchInput.value = "";
+  clearBtn.style.display = "none";
+  catGrid.style.display = "none";
+  medList.style.display = "flex";
+  backBar.style.display = "flex";
+  activeTag.innerText = "Category: " + categoryName;
+  noResults.style.display = "none";
+  
+  cards.forEach(card => {
+    if (card.getAttribute('data-cat') === categoryKey) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+function resetToCategories() {
+  document.getElementById('medSearch').value = "";
+  document.getElementById('clearBtn').style.display = "none";
+  document.getElementById('categoryGrid').style.display = "grid";
+  document.getElementById('medResults').style.display = "none";
+  document.getElementById('backBar').style.display = "none";
+  document.getElementById('noResultsMsg').style.display = "none";
+  document.querySelectorAll('.med-card').forEach(c => c.style.display = "none");
+}
+</script>
+</body>
+</html>
