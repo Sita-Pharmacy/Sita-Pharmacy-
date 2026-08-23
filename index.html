@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sita Pharmacy | Dehradun</title>
-<meta name="description" content="Sita Pharmacy in Rajeshwar Nagar Phase 2, Dehradun. Order medicines, surgical supplies, and get free home delivery. Call +91-8979097510.">
+<meta name="description" content="Sita Pharmacy in Rajeshwar Nagar Phase 2, Dehradun. Order medicines, dental & derma care, surgical supplies with free home delivery. Call +91-8979097510.">
 <meta name="google-site-verification" content="3DL2_eyRwhGCat2XmGJRmrFqQEJzEd5ZCQctfperbhE"/>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%231597a4%22/><path d=%22M38 22h24v16h16v24H62v16H38V62H22V38h16V22z%22 fill=%22%23fff%22/></svg>">
 
@@ -131,7 +131,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 <div>
 <div class="kicker">Care • Quality • Trust</div>
 <h1>Your trusted pharmacy in Dehradun.</h1>
-<p>Sita Pharmacy provides medicines and surgical products for your everyday healthcare needs, with the convenience of free home delivery in Rajeshwar Nagar.</p>
+<p>Sita Pharmacy provides medicines, specialized Dental & Derma products, everyday health essentials, and surgical supplies with free home delivery in Rajeshwar Nagar.</p>
 <div class="actions">
 <a class="btn primary" href="tel:+918979097510">📞 Call 8979097510</a>
 <a class="btn whatsapp" href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20send%20my%20prescription%20and%20order%20medicines." target="_blank">📄 Send Prescription on WhatsApp</a>
@@ -171,7 +171,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     </div>
 
     <div class="card-footer-box">
-      <div class="card-avail">All Types Of Medicine and Surgical Available</div>
+      <div class="card-avail">Dental, Derma, Surgical & All Medicines Available</div>
       <div class="card-deliv">🚚 Free Home Delivery</div>
     </div>
   </div>
@@ -183,7 +183,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
   <div class="perk-item"><div class="perk-icon">⚡</div><div class="perk-text"><strong>30-60 Min Delivery</strong><span>Fast local dispatch</span></div></div>
   <div class="perk-item"><div class="perk-icon">💯</div><div class="perk-text"><strong>100% Genuine</strong><span>Verified distributor stock</span></div></div>
   <div class="perk-item"><div class="perk-icon">💳</div><div class="perk-text"><strong>Easy Payments</strong><span>UPI, Cards & Cash on Delivery</span></div></div>
-  <div class="perk-item"><div class="perk-icon">🩺</div><div class="perk-text"><strong>Health Checks</strong><span>BP & Blood Sugar monitoring</span></div></div>
+  <div class="perk-item"><div class="perk-icon">🩺</div><div class="perk-text"><strong>Dental & Derma Care</strong><span>Specialized doctor medicines</span></div></div>
 </div>
 
 <div class="rx-guide" id="how-to-order">
@@ -220,7 +220,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 </div>
 
 <div class="searchbox">
-<input type="text" id="medSearch" placeholder="Type medicine (e.g. Dolo, Pan-D, Volini, Azithral, ORS)..." onkeyup="filterMedicines()">
+<input type="text" id="medSearch" placeholder="Type medicine (e.g. Ondem, Eye drops, Burnol, Liv 52, Dolo)..." onkeyup="filterMedicines()">
 <button id="clearBtn" class="clear-btn" onclick="resetToCategories()">✕</button>
 </div>
 
@@ -235,14 +235,77 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 
 <div class="cat-grid" id="categoryGrid">
   <div class="cat-card" onclick="selectCategory('fever', 'Fever & Pain Relief')"><div class="cat-icon">💊</div><div class="cat-title">Fever & Pain Relief</div></div>
-  <div class="cat-card" onclick="selectCategory('gastro', 'Gas & Digestion')"><div class="cat-icon">🧪</div><div class="cat-title">Gas & Digestion</div></div>
+  <div class="cat-card" onclick="selectCategory('dental', 'Dental & Oral Care')"><div class="cat-icon">🦷</div><div class="cat-title">Dental & Oral Care</div></div>
+  <div class="cat-card" onclick="selectCategory('skincare', 'Skincare & Derma')"><div class="cat-icon">🧴</div><div class="cat-title">Skincare & Derma Care</div></div>
+  <div class="cat-card" onclick="selectCategory('gastro', 'Gas, Digestion & Vomiting')"><div class="cat-icon">🧪</div><div class="cat-title">Gas, Digestion & Vomiting</div></div>
   <div class="cat-card" onclick="selectCategory('antibiotics', 'Antibiotics')"><div class="cat-icon">🛡️</div><div class="cat-title">Antibiotics & Anti-Infective</div></div>
-  <div class="cat-card" onclick="selectCategory('cold', 'Cold, Cough & Allergy')"><div class="cat-icon">🤧</div><div class="cat-title">Cold, Cough & Allergy</div></div>
+  <div class="cat-card" onclick="selectCategory('cold', 'Cold, Cough & Eye/Ear Care')"><div class="cat-icon">🤧</div><div class="cat-title">Cold, Cough & Eye/Ear Drops</div></div>
   <div class="cat-card" onclick="selectCategory('wellness', 'Vitamins & Supplements')"><div class="cat-icon">⚡</div><div class="cat-title">Vitamins & Supplements</div></div>
   <div class="cat-card" onclick="selectCategory('surgical', 'Surgical & First Aid')"><div class="cat-icon">🩺</div><div class="cat-title">Surgical & First Aid</div></div>
+  <div class="cat-card" onclick="selectCategory('personal', 'Personal Care & Essentials')"><div class="cat-icon">✨</div><div class="cat-title">Personal Care & Essentials</div></div>
 </div>
 
 <div class="med-list" id="medResults">
+  <!-- Dental & Oral Care -->
+  <div class="med-card" data-search="ketorol dt ketorolac toothache dental severe tooth pain tablet rct" data-cat="dental" data-name="Ketorol-DT Tablet (Toothache)">
+    <div><div class="med-name">Ketorol-DT Tablet (Rapid Toothache Relief)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="hexidine clohex chlorhexidine mouthwash antiseptic dental gum infection rinse" data-cat="dental" data-name="Chlorhexidine Antiseptic Mouthwash">
+    <div><div class="med-name">Chlorhexidine Antiseptic Mouthwash (Hexidine / Clohex)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="oraura zytee mucopain mouth ulcer gel painful tongue blisters choline salicylate" data-cat="dental" data-name="Mouth Ulcer Gel (Zytee / Mucopain)">
+    <div><div class="med-name">Mouth Ulcer Relief Gel (Instant Pain Relief)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="stolin tannic gum paint bleeding gums pyorrhea swelling astringent" data-cat="dental" data-name="Gum Astringent Paint (Bleeding Gums)">
+    <div><div class="med-name">Gum Astringent Paint (For Swollen / Bleeding Gums)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="sensodyne repair protect rapid relief sensitivity toothpaste hot cold tooth sensation" data-cat="dental" data-name="Sensodyne Repair & Protect Toothpaste">
+    <div><div class="med-name">Sensodyne Repair & Protect (Sensitivity Specialist)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="clove oil laung ka tel natural toothache dental drops" data-cat="dental" data-name="Pure Clove Oil (Laung Tel)">
+    <div><div class="med-name">Pure Clove Oil (Natural Toothache Relief Drops)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Skincare & Derma Care -->
+  <div class="med-card" data-search="itch guard ring guard quadriderm btex ointment fungal cream rash ringworm jock itch" data-cat="skincare" data-name="Itch Guard / Quadriderm Cream">
+    <div><div class="med-name">Itch Guard / Quadriderm (Ringworm & Fungal Itch Cream)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="ketoconazole shampoo scalp dandruff fungal infection scalpe plus nizral" data-cat="skincare" data-name="Ketoconazole 2% Anti-Dandruff Shampoo">
+    <div><div class="med-name">Ketoconazole 2% Medicated Anti-Dandruff Shampoo</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="candid dusting powder clotrimazole fungal infection sweat rash itching prickly heat" data-cat="skincare" data-name="Candid Dusting Powder (Fungal Relief)">
+    <div><div class="med-name">Candid Dusting Powder (Anti-Fungal & Heat Rash)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="atarax 25 hydroxyzine skin itching allergy urticaria hives tablet" data-cat="skincare" data-name="Atarax 25mg Tablet (Skin Allergy & Itch)">
+    <div><div class="med-name">Atarax 25mg Tablet (Skin Allergy & Itching Relief)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="sunscreen spf 50 matte gel uv lotion sunblock dermaco neutrogena derma" data-cat="skincare" data-name="Sunscreen SPF 50 Gel / Lotion">
+    <div><div class="med-name">Sunscreen SPF 50 (Matte Gel / Sunblock)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="clindamycin nicotinamide gel acne pimple marks spots clindac derma gel" data-cat="skincare" data-name="Acne & Pimple Gel (Clindamycin)">
+    <div><div class="med-name">Acne & Pimple Clearing Gel (Clindamycin)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="face wash himalaya neem clean clear salicylic acid oil control acne" data-cat="skincare" data-name="Face Wash (Himalaya Neem / Clean & Clear)">
+    <div><div class="med-name">Face Wash (Himalaya Purifying Neem / Salicylic Acid)</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="calamine lotion itch skin allergy rash lacto calamine" data-cat="skincare" data-name="Lacto Calamine / Calamine Lotion">
+    <div><div class="med-name">Calamine Lotion & Soothing Oil Balance</div><div class="med-category">Skincare & Derma Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
   <!-- Fever & Pain -->
   <div class="med-card" data-search="dolo 650 paracetamol fever body pain head calpol" data-cat="fever" data-name="Dolo 650mg Tablet">
     <div><div class="med-name">Dolo 650mg Tablet</div><div class="med-category">Fever & Pain Relief</div><div class="med-status in-stock">● In Stock</div></div>
@@ -269,29 +332,45 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
 
-  <!-- Gastro & Acidity -->
+  <!-- Gas, Digestion & Vomiting -->
+  <div class="med-card" data-search="ondem 4 emeset ondansetron vomiting nausea motion sickness travel ulti tablet" data-cat="gastro" data-name="Ondem 4mg (Vomiting & Nausea)">
+    <div><div class="med-name">Ondem 4mg / Emeset (Vomiting & Travel Sickness)</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="liv 52 syrup tablets himalaya liver tonic appetite digestion fatty liver" data-cat="gastro" data-name="Himalaya Liv.52 Syrup / Tablets">
+    <div><div class="med-name">Himalaya Liv.52 (Liver Health & Appetite Booster)</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="pudin hara dabur pearls drops stomach gas ache indigestion herbal" data-cat="gastro" data-name="Dabur Pudin Hara Pearls / Drops">
+    <div><div class="med-name">Dabur Pudin Hara Pearls (Instant Gas & Stomach Ache)</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="dulcolax bisacodyl cremaffin isabgol kayam churna constipation hard stool laxative" data-cat="gastro" data-name="Dulcolax Tablet / Cremaffin Syrup">
+    <div><div class="med-name">Dulcolax / Cremaffin (Constipation & Bowel Relief)</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
   <div class="med-card" data-search="pan d pantoprazole domperidone gas acidity heartburn" data-cat="gastro" data-name="Pan-D Capsule">
-    <div><div class="med-name">Pan-D Capsule</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Pan-D Capsule</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="pantocid 40 pantoprazole acidity stomach burn" data-cat="gastro" data-name="Pantocid 40mg Tablet">
-    <div><div class="med-name">Pantocid 40mg Tablet</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Pantocid 40mg Tablet</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="omez 20 omeprazole acid reflux gas capsules" data-cat="gastro" data-name="Omez 20mg Capsule">
-    <div><div class="med-name">Omez 20mg Capsule</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Omez 20mg Capsule</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="digene antacid syrup chewable mint gel acidity" data-cat="gastro" data-name="Digene Gel Syrup & Tablets">
-    <div><div class="med-name">Digene Gel Syrup & Tablets</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Digene Gel Syrup & Tablets</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="eno fruit salt lemon regular fast acidity relief" data-cat="gastro" data-name="Eno Fruit Salt Sachets">
-    <div><div class="med-name">Eno Fruit Salt Sachets</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Eno Fruit Salt Sachets</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="ors electral powder hydration dehydration diarrhea" data-cat="gastro" data-name="Electral ORS Powder">
-    <div><div class="med-name">Electral ORS Powder (WHO Formula)</div><div class="med-category">Gas & Digestion</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Electral ORS Powder (WHO Formula)</div><div class="med-category">Gas, Digestion & Vomiting</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
 
@@ -300,7 +379,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     <div><div class="med-name">Azithral 500mg Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
-  <div class="med-card" data-search="augmentin 625 duo amoxyclav antibiotic infection" data-cat="antibiotics" data-name="Augmentin 625 Duo Tablet">
+  <div class="med-card" data-search="augmentin 625 duo amoxyclav antibiotic infection dental infection" data-cat="antibiotics" data-name="Augmentin 625 Duo Tablet">
     <div><div class="med-name">Augmentin 625 Duo Tablet</div><div class="med-category">Antibiotics</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
@@ -313,42 +392,62 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
 
-  <!-- Cold, Cough & Allergy -->
+  <!-- Cold, Cough & Eye/Ear Care -->
+  <div class="med-card" data-search="waxsol otorex ear drops clear ear wax blockage ear pain" data-cat="cold" data-name="Waxsol / Otorex Ear Drops">
+    <div><div class="med-name">Waxsol / Otorex (Ear Wax Dissolving Drops)</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="ciplox ciprofloxacin gentamicin eye drops ear drops infection redness irritation pain drop" data-cat="cold" data-name="Ciplox Eye / Ear Drops">
+    <div><div class="med-name">Ciplox Eye & Ear Drops (Antibacterial Relief)</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="strepsils cofsils vicks lozenges sore throat irritation cough tablet" data-cat="cold" data-name="Strepsils / Cofsils Throat Lozenges">
+    <div><div class="med-name">Strepsils / Cofsils (Throat Soothing Lozenges)</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="steamer vaporizer facial steam inhaler nose steam machine sinus blocked nose cold relief inhalator" data-cat="cold" data-name="Facial Steamer & Vaporizer (3-in-1)">
+    <div><div class="med-name">Facial Steamer & Vaporizer (3-in-1 Steam Inhaler)</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="karvol plus inhalant capsules steam capsules breathing cold relief camphor menthol" data-cat="cold" data-name="Karvol Plus Inhalant Steam Capsules">
+    <div><div class="med-name">Karvol Plus Inhalant Steam Capsules</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
   <div class="med-card" data-search="cheston cold cetirizine paracetamol runny nose fever cold" data-cat="cold" data-name="Cheston Cold Tablet">
-    <div><div class="med-name">Cheston Cold Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Cheston Cold Tablet</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="allegra 120 fexofenadine allergy sneezing runny nose" data-cat="cold" data-name="Allegra 120mg Tablet">
-    <div><div class="med-name">Allegra 120mg Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Allegra 120mg Tablet</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="montair lc montelukast levocetirizine asthma allergy" data-cat="cold" data-name="Montair-LC Tablet">
-    <div><div class="med-name">Montair-LC Tablet</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Montair-LC Tablet</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="benadryl cough syrup dry cough allergy relief" data-cat="cold" data-name="Benadryl Cough Formula Syrup">
-    <div><div class="med-name">Benadryl Cough Formula Syrup</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Benadryl Cough Formula Syrup</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="otrivin nasal spray blocked nose breathing congestion" data-cat="cold" data-name="Otrivin Adult Nasal Spray">
-    <div><div class="med-name">Otrivin Adult Nasal Spray</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Otrivin Adult Nasal Spray</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
   <div class="med-card" data-search="vicks vaporub balm inhaler steam cold relief" data-cat="cold" data-name="Vicks VapoRub & Inhaler">
-    <div><div class="med-name">Vicks VapoRub & Inhaler</div><div class="med-category">Cold, Cough & Allergy</div><div class="med-status in-stock">● In Stock</div></div>
+    <div><div class="med-name">Vicks VapoRub & Inhaler</div><div class="med-category">Cold, Cough & Eye/Ear Care</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
 
   <!-- Vitamins & Supplements -->
-  <div class="med-card" data-search="becosules capsules vitamin b complex zinc stamina" data-cat="wellness" data-name="Becosules Z Capsules">
+  <div class="med-card" data-search="becosules capsules vitamin b complex zinc stamina mouth ulcer" data-cat="wellness" data-name="Becosules Z Capsules">
     <div><div class="med-name">Becosules Z Capsules</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
-  <div class="med-card" data-search="shelcal 500 calcium vitamin d3 bone joint health" data-cat="wellness" data-name="Shelcal 500mg Tablet">
+  <div class="med-card" data-search="shelcal 500 calcium vitamin d3 bone joint teeth health" data-cat="wellness" data-name="Shelcal 500mg Tablet">
     <div><div class="med-name">Shelcal 500mg Tablet</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
-  <div class="med-card" data-search="limcee 500 vitamin c chewable immunity skin" data-cat="wellness" data-name="Limcee 500mg Vitamin C">
+  <div class="med-card" data-search="limcee 500 vitamin c chewable immunity skin glowing gums" data-cat="wellness" data-name="Limcee 500mg Vitamin C">
     <div><div class="med-name">Limcee 500mg Vitamin C</div><div class="med-category">Vitamins & Supplements</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
@@ -362,6 +461,18 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
   </div>
 
   <!-- Surgical, First Aid & Care -->
+  <div class="med-card" data-search="burnol silverex burn cream burns hot water steam burn healing antiseptic" data-cat="surgical" data-name="Burnol / Silverex Burn Cream">
+    <div><div class="med-name">Burnol / Silverex (Antiseptic First Aid Burn Cream)</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="electric heating pad gel bag heat pouch warm body pain backache relief electric bottle fomentation" data-cat="surgical" data-name="Electric Heating Pad / Gel Bag">
+    <div><div class="med-name">Electric Heating Pad & Warm Gel Pouch</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="hot water bottle rubber bag pain relief fomentation heating winter cramps stomach pain" data-cat="surgical" data-name="Rubber Hot Water Bottle">
+    <div><div class="med-name">Rubber Hot Water Bottle (Body Pain & Cramps)</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
   <div class="med-card" data-search="dettol liquid antiseptic wound wash first aid" data-cat="surgical" data-name="Dettol Antiseptic Liquid">
     <div><div class="med-name">Dettol Antiseptic Liquid</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
@@ -390,6 +501,40 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     <div><div class="med-name">Glucometer & Sugar Strips</div><div class="med-category">Surgical & First Aid</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
+
+  <!-- Personal Care & Daily Essentials -->
+  <div class="med-card" data-search="perfumes pocket perfume attar bella vita fog fogg fragrance body spray scent wild stone axe" data-cat="personal" data-name="Perfumes & Body Sprays">
+    <div><div class="med-name">Perfumes & Body Sprays (Fogg, Axe, Bella Vita)</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="shampoo conditioner clinic plus head shoulders dove sunsilk hair oil almond coconut dabur" data-cat="personal" data-name="Shampoos, Conditioners & Hair Oils">
+    <div><div class="med-name">Shampoos, Conditioners & Hair Oils</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="dettol lifebuoy soap handwash hygiene bath medimix dove pears" data-cat="personal" data-name="Dettol / Lifebuoy Handwash & Soaps">
+    <div><div class="med-name">Dettol / Lifebuoy Handwash & Soaps</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="colgate sensodyne toothpaste brush oral dental oral b closeup" data-cat="personal" data-name="Everyday Toothpastes & Brushes">
+    <div><div class="med-name">Everyday Toothpastes & Oral Care Brushes</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="pampers mamypoko baby diapers wipes baby care johnson johnson buds powder" data-cat="personal" data-name="Baby Diapers, Wipes & Baby Care">
+    <div><div class="med-name">Baby Diapers, Wipes & Baby Care</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="whisper stayfree sanitary pads napkins women hygiene stayfree" data-cat="personal" data-name="Sanitary Pads & Women Hygiene">
+    <div><div class="med-name">Sanitary Pads & Women's Hygiene</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="nivea vaseline lotion moisturizer cold cream face cream boroline ponds" data-cat="personal" data-name="Body Lotions, Vaseline & Skin Creams">
+    <div><div class="med-name">Body Lotions, Vaseline & Skin Creams</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="all out good knight mosquito repellent liquid machine coil vaporiser refill" data-cat="personal" data-name="Mosquito Repellents (Good Knight / All Out)">
+    <div><div class="med-name">Mosquito Repellents (Good Knight / All Out)</div><div class="med-category">Personal Care & Daily Essentials</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
 </div>
 
 <div class="no-results" id="noResultsMsg">
@@ -402,16 +547,16 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 </section>
 
 <section id="services">
-<div class="head"><h2>What we offer</h2><p>Healthcare essentials and pharmacy services, right in your neighborhood.</p></div>
+<div class="head"><h2>What we offer</h2><p>Healthcare essentials, specialized doctor medicines, and pharmacy services right in your neighborhood.</p></div>
 <div class="grid">
-<div class="feature"><div class="ico">💊</div><h3>Medicines</h3><p>All types of medicines for everyday healthcare needs.</p></div>
-<div class="feature"><div class="ico">🩺</div><h3>Surgical Products</h3><p>A range of surgical and healthcare products available at the pharmacy.</p></div>
-<div class="feature"><div class="ico">🛵</div><h3>Free Home Delivery</h3><p>Call us to check medicine availability and delivery details.</p></div>
+<div class="feature"><div class="ico">💊</div><h3>Medicines & Healthcare</h3><p>All prescription medicines, vitamins, and healthcare essentials.</p></div>
+<div class="feature"><div class="ico">🦷</div><h3>Dental & Derma Care</h3><p>Specialized doctor-recommended dental and skin treatments.</p></div>
+<div class="feature"><div class="ico">🛵</div><h3>Free Home Delivery</h3><p>Call or WhatsApp to get your medicines delivered to your doorstep.</p></div>
 </div>
 </section>
 
 <section class="about" id="about">
-<div><div class="kicker">About Sita Pharmacy</div><h2>Care, quality and trust.</h2><p>Sita Pharmacy has been serving customers in Rajeshwar Nagar, Dehradun since 2025. Our goal is to make access to everyday medicines and healthcare products simple and convenient.</p></div>
+<div><div class="kicker">About Sita Pharmacy</div><h2>Care, quality and trust.</h2><p>Sita Pharmacy has been serving customers in Rajeshwar Nagar, Dehradun since 2025. Our goal is to make access to everyday medicines and specialized healthcare products simple and convenient.</p></div>
 <div class="facts">
 <div class="fact"><strong>📍 Location</strong><span>Rajeshwar Nagar Phase 2, Dehradun</span></div>
 <div class="fact"><strong>🕘 Opening Hours</strong><span>Every day · 9:00 AM – 10:30 PM</span></div>
