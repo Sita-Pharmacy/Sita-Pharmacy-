@@ -88,7 +88,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 .back-btn:hover{background:var(--teal);color:#fff}
 .active-tag{font-size:.9rem;font-weight:700;color:var(--muted)}
 
-.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:680px;margin:0 auto}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:680px;margin:0 auto}
 .cat-card{background:var(--pale);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;cursor:pointer;transition:transform .15s}
 .cat-card:hover{transform:translateY(-2px);background:#e4f6f8}
 .cat-icon{font-size:1.8rem;margin-bottom:6px}
@@ -131,7 +131,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 <div>
 <div class="kicker">Care • Quality • Trust</div>
 <h1>Your trusted pharmacy in Dehradun.</h1>
-<p>Sita Pharmacy provides medicines, specialized Dental & Derma products, everyday health essentials, and surgical supplies with free home delivery in Rajeshwar Nagar.</p>
+<p>Sita Pharmacy provides medicines, specialized Dental & Derma products, Baby & Mother care, and surgical supplies with free home delivery in Rajeshwar Nagar.</p>
 <div class="actions">
 <a class="btn primary" href="tel:+918979097510">📞 Call 8979097510</a>
 <a class="btn whatsapp" href="https://wa.me/918979097510?text=Hi%20Sita%20Pharmacy,%20I%20want%20to%20send%20my%20prescription%20and%20order%20medicines." target="_blank">📄 Send Prescription on WhatsApp</a>
@@ -171,7 +171,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
     </div>
 
     <div class="card-footer-box">
-      <div class="card-avail">Dental, Derma, Surgical & All Medicines Available</div>
+      <div class="card-avail">Dental, Derma, Baby Care, Surgical & Medicines Available</div>
       <div class="card-deliv">🚚 Free Home Delivery</div>
     </div>
   </div>
@@ -220,7 +220,7 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
 </div>
 
 <div class="searchbox">
-<input type="text" id="medSearch" placeholder="Type medicine (e.g. Ondem, Eye drops, Burnol, Liv 52, Dolo)..." onkeyup="filterMedicines()">
+<input type="text" id="medSearch" placeholder="Type medicine (e.g. Ondem, Cerelac, Diapers, Steamer, Dolo)..." onkeyup="filterMedicines()">
 <button id="clearBtn" class="clear-btn" onclick="resetToCategories()">✕</button>
 </div>
 
@@ -241,8 +241,9 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
   <div class="cat-card" onclick="selectCategory('antibiotics', 'Antibiotics')"><div class="cat-icon">🛡️</div><div class="cat-title">Antibiotics & Anti-Infective</div></div>
   <div class="cat-card" onclick="selectCategory('cold', 'Cold, Cough & Eye/Ear Care')"><div class="cat-icon">🤧</div><div class="cat-title">Cold, Cough & Eye/Ear Drops</div></div>
   <div class="cat-card" onclick="selectCategory('wellness', 'Vitamins & Supplements')"><div class="cat-icon">⚡</div><div class="cat-title">Vitamins & Supplements</div></div>
+  <div class="cat-card" onclick="selectCategory('baby', 'Baby Care & Mother Health')"><div class="cat-icon">🍼</div><div class="cat-title">Baby Care & Mother Health</div></div>
   <div class="cat-card" onclick="selectCategory('surgical', 'Surgical & First Aid')"><div class="cat-icon">🩺</div><div class="cat-title">Surgical & First Aid</div></div>
-  <div class="cat-card" onclick="selectCategory('personal', 'Personal Care & Essentials')"><div class="cat-icon">✨</div><div class="cat-title">Personal Care & Essentials</div></div>
+  <div class="cat-card" onclick="selectCategory('personal', 'Personal Care & Essentials')"><div class="cat-icon">✨</div><div class="cat-title">Personal Care & Daily Essentials</div></div>
 </div>
 
 <div class="med-list" id="medResults">
@@ -269,6 +270,24 @@ footer{border-top:1px solid var(--line);padding:25px 7%;display:flex;justify-con
   </div>
   <div class="med-card" data-search="clove oil laung ka tel natural toothache dental drops" data-cat="dental" data-name="Pure Clove Oil (Laung Tel)">
     <div><div class="med-name">Pure Clove Oil (Natural Toothache Relief Drops)</div><div class="med-category">Dental & Oral Care</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+
+  <!-- Baby Care & Mother Health -->
+  <div class="med-card" data-search="cerelac nestle infant baby food wheat rice apple dalia ragi" data-cat="baby" data-name="Nestle Cerelac Baby Cereal">
+    <div><div class="med-name">Nestle Cerelac Baby Cereal (Wheat / Rice / Fruits)</div><div class="med-category">Baby Care & Mother Health</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="gripe water woodwards dabur janma ghunti baby colic gas digestion crying" data-cat="baby" data-name="Woodward's Gripe Water">
+    <div><div class="med-name">Woodward's Gripe Water (Baby Gas & Teething Relief)</div><div class="med-category">Baby Care & Mother Health</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="rashfree sebamed himalaya diaper rash cream redness soothing skin" data-cat="baby" data-name="Diaper Rash Relief Cream">
+    <div><div class="med-name">Diaper Rash Relief Cream (Zinc Oxide / Himalaya)</div><div class="med-category">Baby Care & Mother Health</div><div class="med-status in-stock">● In Stock</div></div>
+    <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
+  </div>
+  <div class="med-card" data-search="baby massage oil dabur lal tail johnson baby oil nourishing bone strength" data-cat="baby" data-name="Baby Massage Oil (Dabur Lal Tail / Johnson's)">
+    <div><div class="med-name">Baby Massage Oil (Dabur Lal Tail / Johnson's)</div><div class="med-category">Baby Care & Mother Health</div><div class="med-status in-stock">● In Stock</div></div>
     <div class="action-box"><button class="add-init-btn" onclick="addItem(this)">+ Add</button><div class="stepper-wrap"><button class="step-btn" onclick="changeQty(this, -1)">-</button><span class="step-qty">1</span><button class="step-btn" onclick="changeQty(this, 1)">+</button></div></div>
   </div>
 
