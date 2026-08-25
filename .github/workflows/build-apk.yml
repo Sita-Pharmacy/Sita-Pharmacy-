@@ -6,24 +6,27 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/ionic-team/capacitor-android:latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup & Build Project
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Initialize App & Sync
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
         run: |
-          # 1. Create Web Directory
           mkdir -p www
           cp index.html www/
           
-          # 2. Setup Capacitor
           npm init -y
-          npm install --save @capacitor/core @capacitor/cli @capacitor/android
+          npm install @capacitor/core@latest @capacitor/cli@latest @capacitor/android@latest
           
-          # 3. Initialize Config with Live Updates
           cat << 'EOF' > capacitor.config.json
           {
             "appId": "com.sitapharmacy.app",
@@ -36,12 +39,16 @@ jobs:
           }
           EOF
           
-          # 4. Generate Android Project
           npx cap add android
           npx cap sync android
-          
-          # 5. Build Debug APK
+
+      - name: Build Debug APK
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+        run: |
           cd android
+          chmod +x ./gradlew
           ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK
