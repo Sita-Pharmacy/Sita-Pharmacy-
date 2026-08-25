@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Setup Java JDK
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
@@ -24,27 +24,15 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Generate Icon & Configure Live Updates
+      - name: Initialize App & Setup Live Webview
         run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick librsvg2-bin
-          
-          # 1. Create High-Resolution Sita Pharmacy App Icon
-          cat << 'EOF' > icon.svg
-          <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-            <rect width="1024" height="1024" rx="220" fill="#1597a4"/>
-            <circle cx="512" cy="512" r="390" fill="#ffffff"/>
-            <rect x="422" y="242" width="180" height="540" rx="30" fill="#439b4b"/>
-            <rect x="242" y="422" width="540" height="180" rx="30" fill="#439b4b"/>
-          </svg>
-          EOF
-          rsvg-convert -w 1024 -h 1024 icon.svg -o icon.png
-
-          # 2. Setup Capacitor with Live URL Sync
           npm init -y
-          npm install @capacitor/core @capacitor/cli @capacitor/android @capacitor/assets
+          npm install @capacitor/core @capacitor/cli @capacitor/android
+          
+          # Initialize Capacitor project
           npx cap init "Sita Pharmacy" "com.sitapharmacy.app" --web-dir .
           
+          # Configure Live Updates
           node -e '
             const fs = require("fs");
             const config = {
@@ -60,14 +48,12 @@ jobs:
           '
           
           npx cap add android
-          npx capacitor-assets generate --android --iconSource icon.png
-          npx cap copy android
 
-      - name: Build Debug APK
+      - name: Build Android APK
         run: |
           cd android
           chmod +x ./gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
