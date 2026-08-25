@@ -6,63 +6,45 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ionic-team/capacitor-android:latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Java JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Build Native Android Project
+      - name: Setup & Build Project
         run: |
+          # 1. Create Web Directory
           mkdir -p www
           cp index.html www/
           
-          # Initialize minimal npm project
+          # 2. Setup Capacitor
           npm init -y
           npm install --save @capacitor/core @capacitor/cli @capacitor/android
           
-          # Initialize capacitor app
-          npx cap init "Sita Pharmacy" "com.sitapharmacy.app" --web-dir www
+          # 3. Initialize Config with Live Updates
+          cat << 'EOF' > capacitor.config.json
+          {
+            "appId": "com.sitapharmacy.app",
+            "appName": "Sita Pharmacy",
+            "webDir": "www",
+            "server": {
+              "url": "https://sita-pharmacy.github.io/Sita-Pharmacy-/",
+              "cleartext": true
+            }
+          }
+          EOF
           
-          # Configure live URL sync
-          node -e '
-            const fs = require("fs");
-            const config = {
-              appId: "com.sitapharmacy.app",
-              appName: "Sita Pharmacy",
-              webDir: "www",
-              server: {
-                url: "https://sita-pharmacy.github.io/Sita-Pharmacy-/",
-                cleartext: true
-              }
-            };
-            fs.writeFileSync("capacitor.config.json", JSON.stringify(config, null, 2));
-          '
-          
-          # Add android platform & sync
+          # 4. Generate Android Project
           npx cap add android
           npx cap sync android
-
-      - name: Compile Debug APK
-        run: |
+          
+          # 5. Build Debug APK
           cd android
-          chmod +x gradlew
           ./gradlew assembleDebug --no-daemon
 
-      - name: Upload APK File
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: SitaPharmacy-App
