@@ -1044,12 +1044,23 @@ function resetToCategories() {
     e.preventDefault();
   });
 
-  // 2. Shows the custom popup once per visit on Android devices
+  // 2. Shows the popup ONLY to regular website visitors on Android
   window.addEventListener('DOMContentLoaded', () => {
-    const isAndroid = /android/i.test(navigator.userAgent);
-    const dismissedThisSession = sessionStorage.getItem('sitaAndroidPopupDismissed');
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const isAndroid = /android/i.test(ua);
 
-    if (isAndroid && !dismissedThisSession) {
+    // Detects if the user is ALREADY inside the standalone app or a WebView wrapper (like AppsGeyser)
+    const isInsideApp = 
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true ||
+      /\bwv\b/i.test(ua) ||                       // Standard Android WebView flag
+      /Appsgeyser/i.test(ua) ||                    // AppsGeyser wrapper
+      /Version\/[\d.]+\s+Chrome\/[\d.]+\s+Mobile/i.test(ua) && !/Chrome\/[\d.]+\s+Mobile\s+Safari/i.test(ua);
+
+    const alreadyDismissed = localStorage.getItem('sitaAndroidPopupDismissed');
+
+    // Only show if on Android, NOT inside the installed app, and NOT dismissed previously
+    if (isAndroid && !isInsideApp && !alreadyDismissed) {
       setTimeout(() => {
         const popup = document.getElementById('androidPopup');
         if (popup) popup.style.display = 'block';
@@ -1057,11 +1068,11 @@ function resetToCategories() {
     }
   });
 
-  // 3. Closes the popup and stores the dismissal for this session
+  // 3. Closes the popup and remembers the choice permanently
   function dismissAndroidPopup() {
     const popup = document.getElementById('androidPopup');
     if (popup) popup.style.display = 'none';
-    sessionStorage.setItem('sitaAndroidPopupDismissed', 'true');
+    localStorage.setItem('sitaAndroidPopupDismissed', 'true');
   }
 </script>
 </body>
