@@ -1021,6 +1021,47 @@ function resetToCategories() {
   document.getElementById('typoBox').style.display = "none";
   document.querySelectorAll('.med-card:not(.custom-med-card-dynamic)').forEach(c => c.style.display = "none");
 }
+  <!-- Per-Visit Android App Download Popup -->
+<div id="androidPopup" style="display:none; position:fixed; bottom:20px; left:20px; right:20px; max-width:400px; margin:0 auto; background:#ffffff; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.25); z-index:99999; padding:16px; border:1px solid #e2e8f0; font-family:sans-serif;">
+  <div style="display:flex; align-items:center; gap:12px;">
+    <img src="logo.png" alt="Sita Pharmacy" style="width:48px; height:48px; border-radius:10px; object-fit:cover;">
+    <div style="flex:1;">
+      <h4 style="margin:0; font-size:15px; color:#1e293b; font-weight:700;">Get Sita Pharmacy App</h4>
+      <p style="margin:2px 0 0 0; font-size:12px; color:#64748b;">Fast orders & instant WhatsApp support</p>
+    </div>
+    <button onclick="dismissAndroidPopup()" style="background:none; border:none; font-size:18px; color:#94a3b8; cursor:pointer; padding:4px;">✕</button>
+  </div>
+  <div style="margin-top:12px; display:flex; gap:8px;">
+    <button onclick="dismissAndroidPopup()" style="flex:1; padding:8px; border:1px solid #cbd5e1; background:#f8fafc; color:#475569; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer;">Later</button>
+    <a href="https://appsgeyser.io/20104861/Sita%20Pharmacy" target="_blank" onclick="dismissAndroidPopup()" style="flex:1; text-align:center; padding:8px; background:#1597a4; color:#ffffff; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;">Download App</a>
+  </div>
+</div>
+
+<script>
+  // 1. Blocks Chrome's default install bar
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+  });
+
+  // 2. Shows the custom popup once per visit on Android devices
+  window.addEventListener('DOMContentLoaded', () => {
+    const isAndroid = /android/i.test(navigator.userAgent);
+    const dismissedThisSession = sessionStorage.getItem('sitaAndroidPopupDismissed');
+
+    if (isAndroid && !dismissedThisSession) {
+      setTimeout(() => {
+        const popup = document.getElementById('androidPopup');
+        if (popup) popup.style.display = 'block';
+      }, 1500);
+    }
+  });
+
+  // 3. Closes the popup and stores the dismissal for this session
+  function dismissAndroidPopup() {
+    const popup = document.getElementById('androidPopup');
+    if (popup) popup.style.display = 'none';
+    sessionStorage.setItem('sitaAndroidPopupDismissed', 'true');
+  }
 </script>
 </body>
 </html>
