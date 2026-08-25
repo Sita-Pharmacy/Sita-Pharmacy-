@@ -1,0 +1,69 @@
+name: Build Sita Pharmacy APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build Native Android Project
+        run: |
+          mkdir -p www
+          cp index.html www/
+          
+          # Initialize minimal npm project
+          npm init -y
+          npm install --save @capacitor/core @capacitor/cli @capacitor/android
+          
+          # Initialize capacitor app
+          npx cap init "Sita Pharmacy" "com.sitapharmacy.app" --web-dir www
+          
+          # Configure live URL sync
+          node -e '
+            const fs = require("fs");
+            const config = {
+              appId: "com.sitapharmacy.app",
+              appName: "Sita Pharmacy",
+              webDir: "www",
+              server: {
+                url: "https://sita-pharmacy.github.io/Sita-Pharmacy-/",
+                cleartext: true
+              }
+            };
+            fs.writeFileSync("capacitor.config.json", JSON.stringify(config, null, 2));
+          '
+          
+          # Add android platform & sync
+          npx cap add android
+          npx cap sync android
+
+      - name: Compile Debug APK
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Upload APK File
+        uses: actions/upload-artifact@v4
+        with:
+          name: SitaPharmacy-App
+          path: android/app/build/outputs/apk/debug/app-debug.apk
