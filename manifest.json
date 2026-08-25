@@ -1,0 +1,16 @@
+{
+  "name": "Sita Pharmacy",
+  "short_name": "Sita Pharmacy",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1597a4",
+  "theme_color": "#1597a4",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/color/512/caduceus.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
