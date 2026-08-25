@@ -1,0 +1,9 @@
+
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.sita_pharmacy.twa",
+        "sha256_cert_fingerprints": ["43:20:42:E5:A0:61:0D:D7:A6:36:D8:0B:65:39:34:09:44:E8:7B:C5:64:43:FC:52:55:91:D8:83:17:D7:1D:11"]
+      }
+    }]
